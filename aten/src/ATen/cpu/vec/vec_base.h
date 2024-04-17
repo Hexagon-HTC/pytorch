@@ -132,7 +132,7 @@ public:
   // versions GCC/Clang have buggy determinations on whether or not an
   // identifier is odr-used or not, and in any case it's hard to tell if
   // a variable is odr-used or not.  So best to just cut the problem at the root.
-  static constexpr size_type size_T = sizeof(T);  // Workaround to compile with VS2022.
+  // static constexpr size_type size_T = sizeof(T);  // Workaround to compile with VS2022.
   static constexpr size_type size() {
     return VECTOR_WIDTH / size_T;
   }
